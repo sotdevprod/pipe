@@ -17,12 +17,14 @@ pipeline {
 			steps {
 				echo 'Analyzing..'
 				sleep 5
+				break
 			}
 		}		
 		stage('Deploy') {
 			steps {
-				echo 'Deploying..
+				echo 'Deploying..'
 				sleep 5
+				
 			}
 		}
 		stage('Monitoring') {
